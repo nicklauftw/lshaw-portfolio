@@ -1,0 +1,101 @@
+/* Will be compiled down to a single stylesheet with your sass files */
+@import '../components/normalize-css/normalize.css';
+@import 'variables';
+@import 'utility';
+@import 'bootstrap';
+@import '1140';
+
+h1, h2, h3 {
+    letter-spacing: -2px;
+}
+
+.row {
+  margin: 2em 0;
+  overflow: auto;
+}
+
+.intro {  
+  h1, h2, h3 {
+    letter-spacing: -2px;
+    text-align: center;
+  }
+}
+
+.intro-img {
+  display: block;
+  position: relative;
+  width: 250px;
+  height: auto;
+  margin: 0 auto 10px;
+}
+
+.section-heading, .text-center {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.section-heading span {
+  background-color: #fefefe;
+  position: relative;
+  display: inline-block;  
+  padding: 0 0.5em;
+  z-index: 2;
+}
+
+.section-heading:before {
+  border-bottom: 1px solid $gray;
+  width: 100%;
+  position: absolute;
+  top: 0.65em;
+  left: 1px;
+  z-index: 1;
+  overflow: visible;
+  content: "";
+}
+
+.portfolio {
+  font-size: 0.875em;
+  ul {
+    list-style: none;
+  }
+  li {
+    padding: 3px 8px 3px 0;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  width: 100%;
+  padding: 0.5em 0;
+  color: darken($white, 10%);
+  background-color: $red;
+  font-size: 0.6em;
+  .row {
+    margin: 0;
+  }
+  a {
+    color: darken($white, 25%);
+  }
+  a:hover {
+    color: darken($white, 25%);
+  }
+  a:visited {
+    color: darken($white, 25%);
+  }
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+
