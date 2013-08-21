@@ -1,0 +1,766 @@
+@import url(../components/normalize-css/normalize.css);
+/* Will be compiled down to a single stylesheet with your sass files */
+/* Fancy ampersand */
+/* line 2, ../../app/styles/utility.scss */
+.amp {
+  font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/*
+ * Bootstrap v2.1.0
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: local("Libre Baskerville"), local("Libre Baskerville"), url("fonts/f5388103.LibreBaskerville-Regular.ttf") format("truetype");
+}
+
+/* line 28, ../../app/styles/bootstrap.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+/* line 34, ../../app/styles/bootstrap.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 40, ../../app/styles/bootstrap.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/* line 44, ../../app/styles/bootstrap.scss */
+html, body {
+  height: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 49, ../../app/styles/bootstrap.scss */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 55, ../../app/styles/bootstrap.scss */
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline: 5px auto #8c1703;
+  outline-offset: -2px;
+}
+
+/* line 63, ../../app/styles/bootstrap.scss */
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/* line 68, ../../app/styles/bootstrap.scss */
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+/* line 75, ../../app/styles/bootstrap.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 79, ../../app/styles/bootstrap.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 83, ../../app/styles/bootstrap.scss */
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 91, ../../app/styles/bootstrap.scss */
+#map_canvas img {
+  max-width: none;
+}
+
+/* line 98, ../../app/styles/bootstrap.scss */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+/* line 105, ../../app/styles/bootstrap.scss */
+button,
+input {
+  *overflow: visible;
+  line-height: normal;
+}
+
+/* line 111, ../../app/styles/bootstrap.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* line 119, ../../app/styles/bootstrap.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+/* line 124, ../../app/styles/bootstrap.scss */
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+
+/* line 132, ../../app/styles/bootstrap.scss */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* line 136, ../../app/styles/bootstrap.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 141, ../../app/styles/bootstrap.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 146, ../../app/styles/bootstrap.scss */
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+/* line 152, ../../app/styles/bootstrap.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 156, ../../app/styles/bootstrap.scss */
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+/* line 164, ../../app/styles/bootstrap.scss */
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 173, ../../app/styles/bootstrap.scss */
+body {
+  margin: 0;
+  font-family: "Libre Baskerville", "Georgia", "Times", serif;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #333333;
+  background-color: #fefefe;
+}
+
+/* line 182, ../../app/styles/bootstrap.scss */
+a {
+  color: #8c1703;
+  text-decoration: none;
+}
+
+/* line 187, ../../app/styles/bootstrap.scss */
+a:hover {
+  color: #8c1703;
+  text-decoration: underline;
+}
+
+/* line 192, ../../app/styles/bootstrap.scss */
+a:visited {
+  color: #8c1703;
+}
+
+/* line 196, ../../app/styles/bootstrap.scss */
+.img-rounded {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+/* line 202, ../../app/styles/bootstrap.scss */
+.img-polaroid {
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* line 212, ../../app/styles/bootstrap.scss */
+.img-circle {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+}
+
+/* line 218, ../../app/styles/bootstrap.scss */
+p {
+  margin: 0 0 10px;
+}
+
+/* line 222, ../../app/styles/bootstrap.scss */
+.lead {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 30px;
+}
+
+/* line 229, ../../app/styles/bootstrap.scss */
+small {
+  font-size: 85%;
+}
+
+/* line 233, ../../app/styles/bootstrap.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 237, ../../app/styles/bootstrap.scss */
+em {
+  font-style: italic;
+}
+
+/* line 241, ../../app/styles/bootstrap.scss */
+cite {
+  font-style: normal;
+}
+
+/* line 245, ../../app/styles/bootstrap.scss */
+.muted {
+  color: #999999;
+}
+
+/* line 254, ../../app/styles/bootstrap.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px 0;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 1;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
+/* line 268, ../../app/styles/bootstrap.scss */
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999999;
+}
+
+/* line 274, ../../app/styles/bootstrap.scss */
+h1 {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+/* line 279, ../../app/styles/bootstrap.scss */
+h2 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+/* line 284, ../../app/styles/bootstrap.scss */
+h3 {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+/* line 289, ../../app/styles/bootstrap.scss */
+h4 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+/* line 294, ../../app/styles/bootstrap.scss */
+h5 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* line 299, ../../app/styles/bootstrap.scss */
+h6 {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+/* line 304, ../../app/styles/bootstrap.scss */
+h1 small {
+  font-size: 24px;
+}
+
+/* line 308, ../../app/styles/bootstrap.scss */
+h2 small {
+  font-size: 18px;
+}
+
+/* line 312, ../../app/styles/bootstrap.scss */
+h3 small {
+  font-size: 14px;
+}
+
+/* line 316, ../../app/styles/bootstrap.scss */
+h4 small {
+  font-size: 14px;
+}
+
+/* line 321, ../../app/styles/bootstrap.scss */
+ul.unstyled,
+ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+
+/* Base grid set to a min width of 80% and max width of 71.25em.  16px/1em base font size * 71.25em = 1140px
+================================================== */
+/* line 3, ../../app/styles/1140.scss */
+.container {
+  position: relative;
+  width: 90%;
+  max-width: 55em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 4, ../../app/styles/1140.scss */
+.column, .columns {
+  float: left;
+  display: inline;
+  position: relative;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+/* line 5, ../../app/styles/1140.scss */
+.row {
+  width: 100%;
+}
+
+/* Fluid Images */
+/* line 8, ../../app/styles/1140.scss */
+.row .column img, .row .columns img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Nested Column Classes */
+/* line 11, ../../app/styles/1140.scss */
+.column.alpha, .columns.alpha {
+  margin-left: 0;
+}
+
+/* line 12, ../../app/styles/1140.scss */
+.column.omega, .columns.omega {
+  margin-right: 0;
+}
+
+/* Base Grid */
+/* line 15, ../../app/styles/1140.scss */
+.row .one.column {
+  width: 6.333333333%;
+}
+
+/* line 16, ../../app/styles/1140.scss */
+.row .two.columns {
+  width: 14.666666666%;
+}
+
+/* line 17, ../../app/styles/1140.scss */
+.row .three.columns {
+  width: 22.999999999%;
+}
+
+/* line 18, ../../app/styles/1140.scss */
+.row .four.columns {
+  width: 31.333333333%;
+}
+
+/* line 19, ../../app/styles/1140.scss */
+.row .five.columns {
+  width: 39.666666666%;
+}
+
+/* line 20, ../../app/styles/1140.scss */
+.row .six.columns {
+  width: 47.999999999%;
+}
+
+/* line 21, ../../app/styles/1140.scss */
+.row .seven.columns {
+  width: 56.333333333%;
+}
+
+/* line 22, ../../app/styles/1140.scss */
+.row .eight.columns {
+  width: 64.666666666%;
+}
+
+/* line 23, ../../app/styles/1140.scss */
+.row .nine.columns {
+  width: 72.999999999%;
+}
+
+/* line 24, ../../app/styles/1140.scss */
+.row .ten.columns {
+  width: 81.333333333%;
+}
+
+/* line 25, ../../app/styles/1140.scss */
+.row .eleven.columns {
+  width: 89.666666666%;
+}
+
+/* line 26, ../../app/styles/1140.scss */
+.row .twelve.columns {
+  width: 97.999999999%;
+}
+
+/* Offsets */
+/* line 29, ../../app/styles/1140.scss */
+.row .offset-by-one {
+  padding-left: 8.3333%;
+}
+
+/* line 30, ../../app/styles/1140.scss */
+.row .offset-by-two {
+  padding-left: 16.667%;
+}
+
+/* line 31, ../../app/styles/1140.scss */
+.row .offset-by-three {
+  padding-left: 25%;
+}
+
+/* line 32, ../../app/styles/1140.scss */
+.row .offset-by-four {
+  padding-left: 33%;
+}
+
+/* line 33, ../../app/styles/1140.scss */
+.row .offset-by-five {
+  padding-left: 41.667%;
+}
+
+/* line 34, ../../app/styles/1140.scss */
+.row .offset-by-six {
+  padding-left: 50%;
+}
+
+/* line 35, ../../app/styles/1140.scss */
+.row .offset-by-seven {
+  padding-left: 58.333%;
+}
+
+/* line 36, ../../app/styles/1140.scss */
+.row .offset-by-eight {
+  padding-left: 66.667%;
+}
+
+/* line 37, ../../app/styles/1140.scss */
+.row .offset-by-nine {
+  padding-left: 75%;
+}
+
+/* line 38, ../../app/styles/1140.scss */
+.row .offset-by-ten {
+  padding-left: 83.333%;
+}
+
+/* line 39, ../../app/styles/1140.scss */
+.row .offset-by-eleven {
+  padding-left: 91.667%;
+}
+
+/* line 41, ../../app/styles/1140.scss */
+.intro p {
+  padding: 0 7.5em;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  /* line 46, ../../app/styles/1140.scss */
+  .container {
+    position: relative;
+    width: 92%;
+  }
+
+  /* line 47, ../../app/styles/1140.scss */
+  .columns, .column {
+    margin: 0;
+  }
+
+  /* line 60, ../../app/styles/1140.scss */
+  .row .one.column,
+  .row .two.columns,
+  .row .three.columns,
+  .row .four.columns,
+  .row .five.columns,
+  .row .six.columns,
+  .row .seven.columns,
+  .row .eight.columns,
+  .row .nine.columns,
+  .row .ten.columns,
+  .row .eleven.columns,
+  .row .twelve.columns {
+    width: 100%;
+  }
+
+  /* Offsets */
+  /* line 77, ../../app/styles/1140.scss */
+  .row .offset-by-one,
+  .row .offset-by-two,
+  .row .offset-by-three,
+  .row .offset-by-four,
+  .row .offset-by-five,
+  .row .offset-by-six,
+  .row .offset-by-seven,
+  .row .offset-by-eight,
+  .row .offset-by-nine,
+  .row .offset-by-ten,
+  .row .offset-by-eleven,
+  .row .offset-by-twelve,
+  .row .offset-by-thirteen,
+  .row .offset-by-fourteen,
+  .row .offset-by-fifteen {
+    padding-left: 0;
+  }
+
+  /* line 79, ../../app/styles/1140.scss */
+  .intro p {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 86, ../../app/styles/1140.scss */
+  .container {
+    width: 98%;
+  }
+
+  /* line 87, ../../app/styles/1140.scss */
+  .columns, .column {
+    margin: 0;
+  }
+
+  /* line 100, ../../app/styles/1140.scss */
+  .row .one.column,
+  .row .two.columns,
+  .row .three.columns,
+  .row .four.columns,
+  .row .five.columns,
+  .row .six.columns,
+  .row .seven.columns,
+  .row .eight.columns,
+  .row .nine.columns,
+  .row .ten.columns,
+  .row .eleven.columns,
+  .row .twelve.columns {
+    width: 100%;
+  }
+
+  /* Offsets */
+  /* line 117, ../../app/styles/1140.scss */
+  .row .offset-by-one,
+  .row .offset-by-two,
+  .row .offset-by-three,
+  .row .offset-by-four,
+  .row .offset-by-five,
+  .row .offset-by-six,
+  .row .offset-by-seven,
+  .row .offset-by-eight,
+  .row .offset-by-nine,
+  .row .offset-by-ten,
+  .row .offset-by-eleven,
+  .row .offset-by-twelve,
+  .row .offset-by-thirteen,
+  .row .offset-by-fourteen,
+  .row .offset-by-fifteen {
+    padding-left: 0;
+  }
+
+  /* line 119, ../../app/styles/1140.scss */
+  .intro p {
+    padding: 0;
+  }
+}
+/* line 8, ../../app/styles/main.scss */
+h1, h2, h3 {
+  letter-spacing: -2px;
+}
+
+/* line 12, ../../app/styles/main.scss */
+.row {
+  margin: 2em 0;
+  overflow: auto;
+}
+
+/* line 18, ../../app/styles/main.scss */
+.intro h1, .intro h2, .intro h3 {
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+/* line 24, ../../app/styles/main.scss */
+.intro-img {
+  display: block;
+  position: relative;
+  width: 250px;
+  height: auto;
+  margin: 0 auto 10px;
+}
+
+/* line 32, ../../app/styles/main.scss */
+.section-heading, .text-center {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 39, ../../app/styles/main.scss */
+.section-heading span {
+  background-color: #fefefe;
+  position: relative;
+  display: inline-block;
+  padding: 0 0.5em;
+  z-index: 2;
+}
+
+/* line 47, ../../app/styles/main.scss */
+.section-heading:before {
+  border-bottom: 1px solid #dddddd;
+  width: 100%;
+  position: absolute;
+  top: 0.65em;
+  left: 1px;
+  z-index: 1;
+  overflow: visible;
+  content: "";
+}
+
+/* line 58, ../../app/styles/main.scss */
+.portfolio {
+  font-size: 0.75em;
+}
+/* line 60, ../../app/styles/main.scss */
+.portfolio ul {
+  list-style: none;
+}
+/* line 63, ../../app/styles/main.scss */
+.portfolio li {
+  padding: 3px 8px 3px 0;
+}
+
+/* line 68, ../../app/styles/main.scss */
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 73, ../../app/styles/main.scss */
+.contact-links li {
+  display: inline;
+  padding: 0 .75em;
+}
+
+/* line 78, ../../app/styles/main.scss */
+footer {
+  width: 100%;
+  padding: 0.5em 0;
+  color: lightgrey;
+  background-color: #8c1703;
+  font-size: 0.6em;
+}
+/* line 84, ../../app/styles/main.scss */
+footer .row {
+  margin: 0;
+}
+/* line 87, ../../app/styles/main.scss */
+footer a {
+  color: #acacac;
+}
+/* line 90, ../../app/styles/main.scss */
+footer a:hover {
+  color: #acacac;
+}
+/* line 93, ../../app/styles/main.scss */
+footer a:visited {
+  color: #acacac;
+}
+
+/* line 98, ../../app/styles/main.scss */
+.left {
+  float: left;
+}
+
+/* line 102, ../../app/styles/main.scss */
+.right {
+  float: right;
+}
