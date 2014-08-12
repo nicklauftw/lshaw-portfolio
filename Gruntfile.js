@@ -314,7 +314,7 @@ module.exports = function (grunt) {
         'concat',
         'uglify',
         'copy',
-        'rev',
+        // 'rev',
         'usemin'
     ]);
 
